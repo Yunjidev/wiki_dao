@@ -1,0 +1,110 @@
+@use '../../../colors' as *;
+
+.sidebar-wrapper {
+  width: 250px;
+  overflow-y: scroll;
+  background-color: $color-black;
+  color: #fff;
+  border-right: 1px solid white;
+  height: 100%;
+  resize: horizontal;
+}
+
+.sidebar-wrapper::-webkit-scrollbar {
+  width: 17px
+}
+
+.sidebar-wrapper::-webkit-scrollbar-track {
+  background: #565f63;
+}
+
+.sidebar-wrapper::-webkit-scrollbar-thumb {
+  background: #0e1014;
+  border-radius: 12px;
+  border: 4px solid #565f63;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
+}
+
+.ant-menu-dark {
+  background-color: #0E1014;
+}
+
+.ant-menu-dark .ant-menu-item:hover {
+  background-color: #343a40;
+}
+
+.ant-menu-dark .ant-menu-item-selected {
+  background-color: #343a40;
+}
+
+.ant-menu-dark .ant-menu-submenu-title {
+  color: #ccc;
+}
+
+.ant-menu-dark .ant-menu-submenu:hover {
+  background-color: #343a40;
+}
+
+.ant-menu-dark .ant-menu-item-active,
+.ant-menu-dark .ant-menu-item-selected {
+  background-color: #343a40 !important;
+}
+
+.ant-menu-dark .ant-menu-item {
+  &:hover {
+    background-color: #343a40;
+  }
+}
+
+.ant-menu-dark .ant-menu-submenu {
+  background-color: #0E1014;
+}
+
+.ant-menu-dark .ant-menu-item-group-title,
+.ant-menu-dark .ant-menu-item-group-list {
+  background-color: #0E1014;
+}
+
+.sidebar-content h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.sidebar-content h1:hover {
+  background-color: #ccc;
+}
+
+.ant-menu-dark .ant-menu-item-selected a {
+  color: #0690DD;
+}
+
+.menu-title {
+  font-weight: bold;
+}
+
+.ant-menu-dark .submenu .ant-menu-item,
+.ant-menu-dark .submenu .ant-menu-item-group-title,
+.ant-menu-dark .submenu .ant-menu-item-group-list {
+  background-color: #0E1014;
+}
+
+/* Ciblez l'élément spécifique avec une règle CSS plus spécifique */
+.ant-menu.ant-menu-sub.ant-menu-inline,
+.ant-menu-dark.ant-menu-inline .ant-menu-sub.ant-menu-inline {
+  background-color: #0E1014;
+  border-left: 1px solid #0690DD;
+}
+
+:where(.css-dev-only-do-not-override-1xg9z9n).ant-menu-inline.ant-menu-root .ant-menu-item >.ant-menu-title-content, 
+:where(.css-dev-only-do-not-override-1xg9z9n).ant-menu-inline.ant-menu-root .ant-menu-submenu-title >.ant-menu-title-content {
+    color: aliceblue;
+    flex: auto;
+    min-width: 0;
+    overflow: hidden;
+}

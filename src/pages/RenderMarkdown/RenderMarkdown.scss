@@ -1,0 +1,30 @@
+.markdown-content {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.6;
+  font-size: 18px;
+  color: #333;
+}
+
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3,
+.markdown-content h4,
+.markdown-content h5,
+.markdown-content h6 {
+  /* Styles pour les titres */
+  color: #ffffff;
+  margin-top: 1em;
+}
+
+.markdown-content p {
+  /* Styles pour les paragraphes */
+  margin-bottom: 1em;
+}
+
+.markdown-content img {
+  /* Styles pour les images */
+  max-width: 100%;
+  height: auto;
+}
