@@ -1,6 +1,6 @@
 import CTAButton from "../Buttons/CTA-Button/CTAButton";
 import "./Nav.scss";
-
+import SearchBar from "../SearchBar/Searchbar";
 export default function Nav() {
   return (
     <nav>
@@ -13,6 +13,7 @@ export default function Nav() {
           />
           <h3 className="nav__title">ChronoDAO Wiki</h3>
         </a>
+        <SearchBar />
         <CTAButton text={"Rejoignez nous"} link={"https://discord.gg/chronodao"} />
       </div>
     </nav>
