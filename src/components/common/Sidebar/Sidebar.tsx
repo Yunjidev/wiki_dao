@@ -53,7 +53,7 @@ const Sidebar = () => {
       <div className="sidebar-content">
         <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
           <Menu.Item key="welcome" disabled className="menu-title">
-            Accueil Wiki ChronoDAO
+            Accueil Wiki ChronoDAO.
           </Menu.Item>
           <Menu.Item key="accueil" icon={<FaHome />}>
             <Link to={'./'}>Wiki ChronoDAO</Link>
