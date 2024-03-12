@@ -56,7 +56,7 @@ const Sidebar = () => {
             Accueil Wiki ChronoDAO.
           </Menu.Item>
           <Menu.Item key="accueil" icon={<FaHome />}>
-            <Link to={'./'}>Wiki ChronoDAO</Link>
+            <Link to={'./'}>Wiki ChronoDAO.</Link>
           </Menu.Item>
           <Menu.Item key="jeux" disabled className="menu-title">
             Jeux
